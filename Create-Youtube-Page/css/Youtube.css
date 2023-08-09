@@ -1,0 +1,1241 @@
+     @media (max-width: 750px) {
+         .Video-Grid, 
+         .Video-Time, 
+         .Video-Info, 
+         .Video-Author,  
+         .Video-Views  {
+            background-color: wheat;
+            color: maroon;
+            grid-template-columns: 1fr 1fr;
+         }
+        
+         body {
+            background-color: white;
+            margin: 0;
+            padding-top: 60px;
+         }
+   
+         p {
+            font-family: Roboto, Arial;
+            margin-top: 0pxs;
+            margin-bottom: 0px;
+         }
+   
+         .Header {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 55px;
+            padding-bottom: 15px;
+            border-bottom-width: 1px; 
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+            z-index: 1000;
+         }
+   
+         .Left-Section {
+            display: flex;
+            align-items: center;         
+         }
+               
+         .Hamburger-Menu-Container, 
+         .Youtube-Logo-Container, 
+         .Search-Button, 
+         .Voice-Search, 
+         .Upload-Icon-Container, 
+         .Youtube-Apps-Container, 
+         .Notification-Icon-Container, 
+         .My-Channel-Profile-Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+         }
+         
+         .Hamburger-Menu-Container .Tooltip, 
+         .Youtube-Logo-Container .Tooltip, 
+         .Search-Button .Tooltip, 
+         .Voice-Search .Tooltip,      
+         .Upload-Icon-Container .Tooltip, 
+         .Youtube-Apps-Container .Tooltip, 
+         .Notification-Icon-Container .Tooltip, 
+         .My-Channel-Profile-Container .Tooltip {
+            position: absolute;
+            background-color: grey;
+            color: white;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            bottom: -30px;
+            opacity: 0;
+            transition: opacity 0.15sec;
+            pointer-events: none;
+            white-space: nowrap;
+         }
+   
+         .Hamburger-Menu-Container:hover .Tooltip, 
+         .Youtube-Logo-Container:hover .Tooltip, 
+         .Search-Button:hover .Tooltip, 
+         .Voice-Search:hover .Tooltip, 
+         .Upload-Icon-Container:hover .Tooltip, 
+         .Youtube-Apps-Container:hover .Tooltip, 
+         .Notification-Icon-Container:hover .Tooltip, 
+         .My-Channel-Profile-Container:hover .Tooltip {
+            opacity: 1;
+         }
+   
+         .Hamburger-Menu {
+            height: 25px;
+            margin-left: 24px;
+            margin-right: 24px;
+         }
+   
+         .Hamburger-Menu:hover {
+            cursor: pointer;
+         }
+   
+         .Youtube-Logo {
+            height: 20px;
+         }
+   
+         .Youtube-Logo:hover {
+            cursor: pointer;
+         }
+   
+         .Middle-Section {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            margin-left: 70px;
+            margin-right: 35px;
+            max-width: 700px;
+         }
+   
+         .Search-bar {
+            height: 36.5px;
+            padding-left: 12px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(211, 211, 211);
+            border-radius: 2px;
+            box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            display: flex;
+            flex: 1;
+            width: 0px;
+            margin-left: 45px;
+            font-size: x-large;
+            border-bottom-color: rgb(204, 204, 204);
+            background-color: rgb(255, 255, 255);
+            border-left-color: rgb(204, 204, 204);
+            border-top-color: rgb(204, 204, 204);
+         }
+   
+         .Search-bar::placeholder {
+            font-family: Roboto, Arial;
+            font-size: 16px;
+         }
+   
+         .Search-Button {
+            height: 40px;
+            width: 66px;
+            background-color: rgb(248, 248, 248);
+            border-width: 1px;
+            border-color: rgb(211, 211, 211);
+            margin-left: -1px;
+            margin-right: 10px;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;         
+         }
+   
+         .Search-Button:hover {
+            cursor: pointer;
+         }
+   
+         .Search-Icon {
+            height: 25px;
+         }
+   
+         .Voice-Search {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(245, 245, 245);
+         }
+         
+         .Voice-Search:hover {
+            cursor: pointer;
+         }
+   
+         .Voice-Icon {
+            height: 24px;
+         }
+   
+         .Right-Section {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;         
+            margin-right: 22px;
+            flex-shrink: 0px;
+         }
+   
+         .Upload-Icon {
+            height: 24px;
+         }
+   
+         .Upload-Icon:hover {
+            cursor: pointer;
+         }
+   
+         .Youtube-Apps {
+            height: 24px;
+         }
+         
+         .Youtube-Apps:hover {
+            cursor: pointer;
+         }
+   
+         .Notification-Icon {
+            height: 24px;
+         }
+   
+         .Notification-Icon:hover {
+            cursor: pointer;
+         }
+   
+         .Notification-Icon-Container {
+            position: relative;
+         }
+   
+         .Notification-Count {
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            font-family: Roboto, Arial;
+            font-size: 8px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 12px;
+         }
+   
+         .My-Channel-Profile {
+            height: 32px;
+            border-radius: 16px;
+         }
+   
+         .My-Channel-Profile:hover {
+            cursor: pointer;
+         }
+   
+         .Side-Bar {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            top: 70px;
+            width: 75px;
+            background-color: white;
+            z-index: 2000;
+   
+         }
+   
+         .Side-Bar-Link {
+            height: 76px;
+            margin-top: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         }
+   
+         .Side-Bar-Link img {
+            height: 25px;
+         }
+   
+         .Side-Bar-Link:hover {
+            background-color: rgb(235, 235, 235);
+         }
+   
+         .Side-Bar-Icon-Names {
+            font-family: Roboto, Arial;
+            font-size: 6px;
+            margin-top: 2px;
+            margin-bottom: 0px;
+            max-width: 100%;
+            display: block;
+            max-height: 1.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4rem;
+         }
+   
+         .Video-Grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 30px;
+            margin-top: 30px;
+            padding-top: 0px;
+            padding-right: 40px;
+            padding-left: 120px;
+         }
+
+         
+      .Video {
+         background-color: none;
+         position: relative;
+      }
+
+      .Thumbnail {
+         margin-bottom: 10px;
+      }
+
+      .Hiroshima_Atomic_Bomb {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Barbie-2023 {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .International-Space-Station {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Oppenheimer-2023 {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Avengers-Civil-War {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Fall-Of-Hitler {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .The-Hamster-Challenge {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Universe-Size-Comparision {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .The-Nun-2 { 
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Video-Time {
+         background-color: black;
+         color: white;
+         position: absolute;
+         right: 8px;
+         z-index: 999;
+         border-radius: 2px;
+         padding-left: 5px;
+         padding-right: 5px;
+         padding-top: 3px;
+         padding-bottom: 3px;
+         font-weight: 500;
+         margin-top: -30px;
+      }
+
+      .Video-Info-Grid {
+         display: grid;
+         grid-template-columns: 40px 1fr;
+      }
+
+      .Channel-Picture {
+         width: 40px;
+      }
+
+      .Profile-Picture {
+         width: 40px;
+         border-radius: 20px;
+      }
+
+      .Video-Info {
+         margin-left: 10px;
+         margin-top: 5px;
+      }
+
+      .Video-Title {
+         margin-top: 0px;
+         margin-bottom: 6px;
+         font-weight: 500;
+         font-size: 15px;
+      }
+
+      .Video-Author {
+         margin-top: 0px;
+         margin-bottom: 3px;
+         font-size: 12px;
+      }
+
+      .Video-Views {
+         padding-bottom: 30px;
+         margin-top: 0px;
+         font-size: 12px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+      @media (min-width: 751px) and (max-width: 999px) {
+         .Video-Grid, 
+         .Video-Time, 
+         .Video-Info, 
+         .Video-Author,  
+         .Video-Views  {
+            background-color: black;
+            color: white;
+            grid-template-columns: 1fr 1fr 1fr;
+         }  
+         
+         body {
+            background-color: white;
+            margin: 0;
+            padding-top: 60px;
+         }
+   
+         p {
+            font-family: Roboto, Arial;
+            margin-top: 0pxs;
+            margin-bottom: 0px;
+         }
+   
+         .Header {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 55px;
+            padding-bottom: 15px;
+            border-bottom-width: 1px; 
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+            z-index: 1000;
+         }
+   
+         .Left-Section {
+            display: flex;
+            align-items: center;         
+         }
+               
+         .Hamburger-Menu-Container, 
+         .Youtube-Logo-Container, 
+         .Search-Button, 
+         .Voice-Search, 
+         .Upload-Icon-Container, 
+         .Youtube-Apps-Container, 
+         .Notification-Icon-Container, 
+         .My-Channel-Profile-Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+         }
+         
+         .Hamburger-Menu-Container .Tooltip, 
+         .Youtube-Logo-Container .Tooltip, 
+         .Search-Button .Tooltip, 
+         .Voice-Search .Tooltip,      
+         .Upload-Icon-Container .Tooltip, 
+         .Youtube-Apps-Container .Tooltip, 
+         .Notification-Icon-Container .Tooltip, 
+         .My-Channel-Profile-Container .Tooltip {
+            position: absolute;
+            background-color: grey;
+            color: white;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            bottom: -30px;
+            opacity: 0;
+            transition: opacity 0.15sec;
+            pointer-events: none;
+            white-space: nowrap;
+         }
+   
+         .Hamburger-Menu-Container:hover .Tooltip, 
+         .Youtube-Logo-Container:hover .Tooltip, 
+         .Search-Button:hover .Tooltip, 
+         .Voice-Search:hover .Tooltip, 
+         .Upload-Icon-Container:hover .Tooltip, 
+         .Youtube-Apps-Container:hover .Tooltip, 
+         .Notification-Icon-Container:hover .Tooltip, 
+         .My-Channel-Profile-Container:hover .Tooltip {
+            opacity: 1;
+         }
+   
+         .Hamburger-Menu {
+            height: 25px;
+            margin-left: 24px;
+            margin-right: 24px;
+         }
+   
+         .Hamburger-Menu:hover {
+            cursor: pointer;
+         }
+   
+         .Youtube-Logo {
+            height: 20px;
+         }
+   
+         .Youtube-Logo:hover {
+            cursor: pointer;
+         }
+   
+         .Middle-Section {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            margin-left: 70px;
+            margin-right: 35px;
+            max-width: 700px;
+         }
+   
+         .Search-bar {
+            height: 36.5px;
+            padding-left: 12px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(211, 211, 211);
+            border-radius: 2px;
+            box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            display: flex;
+            flex: 1;
+            width: 0px;
+            margin-left: 45px;
+            font-size: x-large;
+            border-bottom-color: rgb(204, 204, 204);
+            background-color: rgb(255, 255, 255);
+            border-left-color: rgb(204, 204, 204);
+            border-top-color: rgb(204, 204, 204);
+         }
+   
+         .Search-bar::placeholder {
+            font-family: Roboto, Arial;
+            font-size: 16px;
+         }
+   
+         .Search-Button {
+            height: 40px;
+            width: 66px;
+            background-color: rgb(248, 248, 248);
+            border-width: 1px;
+            border-color: rgb(211, 211, 211);
+            margin-left: -1px;
+            margin-right: 10px;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;         
+         }
+   
+         .Search-Button:hover {
+            cursor: pointer;
+         }
+   
+         .Search-Icon {
+            height: 25px;
+         }
+   
+         .Voice-Search {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(245, 245, 245);
+         }
+         
+         .Voice-Search:hover {
+            cursor: pointer;
+         }
+   
+         .Voice-Icon {
+            height: 24px;
+         }
+   
+         .Right-Section {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;         
+            margin-right: 22px;
+            flex-shrink: 0px;
+         }
+   
+         .Upload-Icon {
+            height: 24px;
+         }
+   
+         .Upload-Icon:hover {
+            cursor: pointer;
+         }
+   
+         .Youtube-Apps {
+            height: 24px;
+         }
+         
+         .Youtube-Apps:hover {
+            cursor: pointer;
+         }
+   
+         .Notification-Icon {
+            height: 24px;
+         }
+   
+         .Notification-Icon:hover {
+            cursor: pointer;
+         }
+   
+         .Notification-Icon-Container {
+            position: relative;
+         }
+   
+         .Notification-Count {
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            font-family: Roboto, Arial;
+            font-size: 8px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 12px;
+         }
+   
+         .My-Channel-Profile {
+            height: 32px;
+            border-radius: 16px;
+         }
+   
+         .My-Channel-Profile:hover {
+            cursor: pointer;
+         }
+   
+         .Side-Bar {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            top: 70px;
+            width: 75px;
+            background-color: white;
+            z-index: 2000;
+   
+         }
+   
+         .Side-Bar-Link {
+            height: 76px;
+            margin-top: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         }
+   
+         .Side-Bar-Link img {
+            height: 25px;
+         }
+   
+         .Side-Bar-Link:hover {
+            background-color: rgb(235, 235, 235);
+         }
+   
+         .Side-Bar-Icon-Names {
+            font-family: Roboto, Arial;
+            font-size: 6px;
+            margin-top: 2px;
+            margin-bottom: 0px;
+            max-width: 100%;
+            display: block;
+            max-height: 1.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4rem;
+         }
+   
+         .Video-Grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 30px;
+            margin-top: 30px;
+            padding-top: 0px;
+            padding-right: 40px;
+            padding-left: 120px;
+         }
+
+         
+      .Video {
+         background-color: none;
+         position: relative;
+      }
+
+      .Thumbnail {
+         margin-bottom: 10px;
+      }
+
+      .Hiroshima_Atomic_Bomb {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Barbie-2023 {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .International-Space-Station {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Oppenheimer-2023 {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Avengers-Civil-War {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Fall-Of-Hitler {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .The-Hamster-Challenge {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Universe-Size-Comparision {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .The-Nun-2 { 
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Video-Time {
+         background-color: black;
+         color: white;
+         position: absolute;
+         right: 8px;
+         z-index: 999;
+         border-radius: 2px;
+         padding-left: 5px;
+         padding-right: 5px;
+         padding-top: 3px;
+         padding-bottom: 3px;
+         font-weight: 500;
+         margin-top: -30px;
+      }
+
+      .Video-Info-Grid {
+         display: grid;
+         grid-template-columns: 40px 1fr;
+      }
+
+      .Channel-Picture {
+         width: 40px;
+      }
+
+      .Profile-Picture {
+         width: 40px;
+         border-radius: 20px;
+      }
+
+      .Video-Info {
+         margin-left: 10px;
+         margin-top: 5px;
+      }
+
+      .Video-Title {
+         margin-top: 0px;
+         margin-bottom: 6px;
+         font-weight: 500;
+         font-size: 15px;
+      }
+
+      .Video-Author {
+         margin-top: 0px;
+         margin-bottom: 3px;
+         font-size: 12px;
+      }
+
+      .Video-Views {
+         padding-bottom: 30px;
+         margin-top: 0px;
+         font-size: 12px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+      @media (min-width: 1000px) {
+         .Video-Grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+         }
+
+         body {
+            background-color: white;
+            margin: 0;
+            padding-top: 60px;
+         }
+   
+         p {
+            font-family: Roboto, Arial;
+            margin-top: 0pxs;
+            margin-bottom: 0px;
+         }
+   
+         .Header {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 55px;
+            padding-bottom: 15px;
+            border-bottom-width: 1px; 
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+            z-index: 1000;
+         }
+   
+         .Left-Section {
+            display: flex;
+            align-items: center;         
+         }
+               
+         .Hamburger-Menu-Container, 
+         .Youtube-Logo-Container, 
+         .Search-Button, 
+         .Voice-Search, 
+         .Upload-Icon-Container, 
+         .Youtube-Apps-Container, 
+         .Notification-Icon-Container, 
+         .My-Channel-Profile-Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+         }
+         
+         .Hamburger-Menu-Container .Tooltip, 
+         .Youtube-Logo-Container .Tooltip, 
+         .Search-Button .Tooltip, 
+         .Voice-Search .Tooltip,      
+         .Upload-Icon-Container .Tooltip, 
+         .Youtube-Apps-Container .Tooltip, 
+         .Notification-Icon-Container .Tooltip, 
+         .My-Channel-Profile-Container .Tooltip {
+            position: absolute;
+            background-color: grey;
+            color: white;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            bottom: -30px;
+            opacity: 0;
+            transition: opacity 0.15sec;
+            pointer-events: none;
+            white-space: nowrap;
+         }
+   
+         .Hamburger-Menu-Container:hover .Tooltip, 
+         .Youtube-Logo-Container:hover .Tooltip, 
+         .Search-Button:hover .Tooltip, 
+         .Voice-Search:hover .Tooltip, 
+         .Upload-Icon-Container:hover .Tooltip, 
+         .Youtube-Apps-Container:hover .Tooltip, 
+         .Notification-Icon-Container:hover .Tooltip, 
+         .My-Channel-Profile-Container:hover .Tooltip {
+            opacity: 1;
+         }
+   
+         .Hamburger-Menu {
+            height: 25px;
+            margin-left: 24px;
+            margin-right: 24px;
+         }
+   
+         .Hamburger-Menu:hover {
+            cursor: pointer;
+         }
+   
+         .Youtube-Logo {
+            height: 20px;
+         }
+   
+         .Youtube-Logo:hover {
+            cursor: pointer;
+         }
+   
+         .Middle-Section {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            margin-left: 70px;
+            margin-right: 35px;
+            max-width: 700px;
+         }
+   
+         .Search-bar {
+            height: 36.5px;
+            padding-left: 12px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(211, 211, 211);
+            border-radius: 2px;
+            box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            display: flex;
+            flex: 1;
+            width: 0px;
+            margin-left: 45px;
+            font-size: x-large;
+            border-bottom-color: rgb(204, 204, 204);
+            background-color: rgb(255, 255, 255);
+            border-left-color: rgb(204, 204, 204);
+            border-top-color: rgb(204, 204, 204);
+         }
+   
+         .Search-bar::placeholder {
+            font-family: Roboto, Arial;
+            font-size: 16px;
+         }
+   
+         .Search-Button {
+            height: 40px;
+            width: 66px;
+            background-color: rgb(248, 248, 248);
+            border-width: 1px;
+            border-color: rgb(211, 211, 211);
+            margin-left: -1px;
+            margin-right: 10px;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;         
+         }
+   
+         .Search-Button:hover {
+            cursor: pointer;
+         }
+   
+         .Search-Icon {
+            height: 25px;
+         }
+   
+         .Voice-Search {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(245, 245, 245);
+         }
+         
+         .Voice-Search:hover {
+            cursor: pointer;
+         }
+   
+         .Voice-Icon {
+            height: 24px;
+         }
+   
+         .Right-Section {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;         
+            margin-right: 22px;
+            flex-shrink: 0px;
+         }
+   
+         .Upload-Icon {
+            height: 24px;
+         }
+   
+         .Upload-Icon:hover {
+            cursor: pointer;
+         }
+   
+         .Youtube-Apps {
+            height: 24px;
+         }
+         
+         .Youtube-Apps:hover {
+            cursor: pointer;
+         }
+   
+         .Notification-Icon {
+            height: 24px;
+         }
+   
+         .Notification-Icon:hover {
+            cursor: pointer;
+         }
+   
+         .Notification-Icon-Container {
+            position: relative;
+         }
+   
+         .Notification-Count {
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            font-family: Roboto, Arial;
+            font-size: 8px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 12px;
+         }
+   
+         .My-Channel-Profile {
+            height: 32px;
+            border-radius: 16px;
+         }
+   
+         .My-Channel-Profile:hover {
+            cursor: pointer;
+         }
+   
+         .Side-Bar {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            top: 70px;
+            width: 75px;
+            background-color: white;
+            z-index: 2000;
+   
+         }
+   
+         .Side-Bar-Link {
+            height: 76px;
+            margin-top: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         }
+   
+         .Side-Bar-Link img {
+            height: 25px;
+         }
+   
+         .Side-Bar-Link:hover {
+            background-color: rgb(235, 235, 235);
+         }
+   
+         .Side-Bar-Icon-Names {
+            font-family: Roboto, Arial;
+            font-size: 6px;
+            margin-top: 2px;
+            margin-bottom: 0px;
+            max-width: 100%;
+            display: block;
+            max-height: 1.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4rem;
+         }
+   
+         .Video-Grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 30px;
+            margin-top: 30px;
+            padding-top: 0px;
+            padding-right: 40px;
+            padding-left: 120px;
+         }
+
+         
+      .Video {
+         background-color: none;
+         position: relative;
+      }
+
+      .Thumbnail {
+         margin-bottom: 10px;
+      }
+
+      .Hiroshima_Atomic_Bomb {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Barbie-2023 {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .International-Space-Station {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Oppenheimer-2023 {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Avengers-Civil-War {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Fall-Of-Hitler {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .The-Hamster-Challenge {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Universe-Size-Comparision {
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .The-Nun-2 { 
+         width: 100%; 
+         border-radius: 13px;
+      }
+
+      .Video-Time {
+         background-color: black;
+         color: white;
+         position: absolute;
+         right: 8px;
+         z-index: 999;
+         border-radius: 2px;
+         padding-left: 5px;
+         padding-right: 5px;
+         padding-top: 3px;
+         padding-bottom: 3px;
+         font-weight: 500;
+         margin-top: -30px;
+      }
+
+      .Video-Info-Grid {
+         display: grid;
+         grid-template-columns: 40px 1fr;
+      }
+
+      .Channel-Picture {
+         width: 40px;
+      }
+
+      .Profile-Picture {
+         width: 40px;
+         border-radius: 20px;
+      }
+
+      .Video-Info {
+         margin-left: 10px;
+         margin-top: 5px;
+      }
+
+      .Video-Title {
+         margin-top: 0px;
+         margin-bottom: 6px;
+         font-weight: 500;
+         font-size: 15px;
+      }
+
+      .Video-Author {
+         margin-top: 0px;
+         margin-bottom: 3px;
+         font-size: 12px;
+         color: rgb(96, 96, 96);
+      }
+
+      .Video-Views {
+         padding-bottom: 30px;
+         margin-top: 0px;
+         font-size: 12px;
+         color: rgb(96, 96, 96);
+      }
+}
